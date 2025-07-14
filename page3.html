@@ -5,65 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Select Your Session – Neha Yadav 💋</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
       padding: 0;
-       background: url('https://wonderclub.com/images/WSKU/59/7I/W1597I.jpg') no-repeat center center/cover;
-      height: 100vh;
       font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      min-height: 100vh;
+      background: url('https://wonderclub.com/images/WSKU/59/7I/W1597I.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      overflow-x: hidden;
       color: white;
       text-align: center;
     }
+
     h1 {
-      text-align: center;
-      padding-top: 30px;
-      font-size: 2.4rem;
+      padding: 30px 20px 10px;
+      font-size: 2.2rem;
       color: #ff69b4;
       text-shadow: 0 0 10px #ff1493;
     }
+
     .pricing-container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 30px;
-      max-width: 1200px;
-      margin: 30px auto;
-      padding: 0 20px;
+      gap: 20px;
+      width: 100%;
+      padding: 20px 10px 60px;
     }
+
     .card {
-      background: #1a1a1a;
+      background: rgba(26, 26, 26, 0.95);
       border-radius: 15px;
-      padding: 25px;
-      width: 280px;
+      padding: 20px;
+      width: 100%;
+      max-width: 300px;
       text-align: center;
       border: 2px solid #ff69b4;
       box-shadow: 0 0 15px #ff1493;
       transition: transform 0.3s, box-shadow 0.3s;
-      position: relative;
     }
+
     .card:hover {
       transform: scale(1.05);
       box-shadow: 0 0 30px #ff69b4;
     }
+
     .price {
-      font-size: 2.2rem;
+      font-size: 2rem;
+      margin: 10px 0;
       color: #fff;
-      margin: 15px 0;
     }
+
     .duration {
       font-size: 1.1rem;
       color: #ffb3d1;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
+
     .features {
       font-size: 0.95rem;
       color: #ddd;
       margin-bottom: 20px;
     }
+
     .select-btn {
       background: #ff1493;
       color: white;
@@ -72,12 +81,42 @@
       border-radius: 50px;
       font-size: 1rem;
       cursor: pointer;
-      transition: background 0.3s;
       text-decoration: none;
       display: inline-block;
+      position: relative;
+      overflow: hidden;
     }
+
+    .select-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: rgba(255,255,255,0.3);
+      transform: skewX(-20deg);
+    }
+
+    .select-btn:hover::after {
+      left: 120%;
+      transition: left 0.5s;
+    }
+
     .select-btn:hover {
       background: #ff69b4;
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      .price {
+        font-size: 1.6rem;
+      }
+      .duration, .features {
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
@@ -89,7 +128,7 @@
     <div class="card">
       <div class="price">₹50</div>
       <div class="duration">Quick Peek (2 mins)</div>
-      <div class="features">Tease only • 1-on-1 •</div>
+      <div class="features">Tease only • 1-on-1 • Audio</div>
       <a class="select-btn" href="https://t.me/nehaydv8" target="_blank">Select</a>
     </div>
     <div class="card">
