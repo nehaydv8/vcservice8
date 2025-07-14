@@ -1,25 +1,26 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Proofs – Neha Yadav 💋</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       padding: 0;
       background: url('https://wonderclub.com/images/WSKU/59/7I/W1597I.jpg') no-repeat center center/cover;
-      height: 100vh;
+      min-height: 100vh;
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       color: white;
       text-align: center;
     }
     h1 {
-      text-align: center;
       padding: 30px 20px 10px;
       color: #ff69b4;
       font-size: 2.3rem;
@@ -27,37 +28,40 @@
     }
     .section {
       margin: 30px auto;
-      max-width: 95%;
+      width: 100%;
+      padding: 0 15px;
     }
     .title {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin-bottom: 20px;
       color: #ff69b4;
-      text-align: center;
     }
     .cards {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 15px;
     }
     .proof-card {
       background: #fff;
       color: black;
-      padding: 20px;
+      padding: 15px;
       border-radius: 12px;
-      width: 280px;
+      width: 100%;
+      max-width: 280px;
       box-shadow: 0 0 12px #ff69b4;
       font-weight: bold;
       text-align: left;
     }
     .proof-card.green { border-left: 8px solid #4CAF50; }
     .proof-card.purple { border-left: 8px solid #9C27B0; }
+
     .chat-box {
       background-color: #1a1a1a;
       border-radius: 15px;
       padding: 15px;
-      max-width: 260px;
+      width: 100%;
+      max-width: 280px;
       box-shadow: 0 0 10px #ff69b4;
     }
     .chat-box .msg {
@@ -67,9 +71,9 @@
       margin: 5px 0;
       font-size: 0.95rem;
     }
+
     .btn {
       display: block;
-      width: fit-content;
       margin: 40px auto;
       padding: 15px 30px;
       background: #ff1493;
@@ -80,10 +84,21 @@
       box-shadow: 0 0 10px #ff1493;
       animation: pulse 2s infinite;
     }
+
     @keyframes pulse {
       0% { box-shadow: 0 0 0 0 rgba(255,20,147,0.6); }
       70% { box-shadow: 0 0 0 20px rgba(255,20,147,0); }
       100% { box-shadow: 0 0 0 0 rgba(255,20,147,0); }
+    }
+
+    /* Optional: Make font sizes a bit smaller on small screens */
+    @media screen and (max-width: 400px) {
+      h1 {
+        font-size: 1.7rem;
+      }
+      .title {
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
